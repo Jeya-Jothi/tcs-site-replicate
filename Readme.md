@@ -1,32 +1,26 @@
-# TCS Landing Page Clone (Desktop Only)
+# TCS Landing Page Clone (Responsive for Tablet and Desktop)
 
-This project is a desktop-only clone of the official TCS website's landing page, designed using **HTML** and **CSS**. It includes a fixed background hero section and a styled footer with social media icons and legal links.
+This project is a clone of the official TCS website's landing page, designed using **HTML** and **CSS**. It includes a fixed background hero section, a fully responsive footer, and a structured content description section. The design currently supports **tablet** and **desktop** devices.
 
 ## Features
 
 - Fixed background **hero section**
+- Responsive **about description** section using DRY (Don't Repeat Yourself) principle
 - Fully styled **footer** with:
   - TCS logo
   - Legal & policy navigation links
   - Social media icon section aligned to the right
-- Flexbox layout for responsive alignment (desktop)
-- Mobile responsiveness not yet implemented
+- Flexbox layout for responsive alignment
 
 ## Tech Stack
 
 - HTML5
-- CSS3 (Flexbox)
+- CSS3 (Flexbox, Media Queries)
 
 ## How to Run
 
 1. Clone the repository or download the project files.
 2. Open `index.html` in your browser.
-
-## To Do
-
-- [ ] Add responsive design for mobile and tablet devices
-- [ ] Improve accessibility (e.g. ARIA labels)
-- [ ] Add hover effects for footer links
 
 ## License
 

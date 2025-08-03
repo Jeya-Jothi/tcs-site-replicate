@@ -10,66 +10,93 @@
   </head>
   <body>
     <header>
-      <div class="logo-div">
-        <a href="https://www.tcs.com/">
+      <div class="top-bar">
+        <div class="logo-div">
+          <a href="https://www.tcs.com/">
+            <img
+            class="tcs-logo-img"
+            src="https://www.tcs.com/content/dam/global-tcs/en/images/home/tcs-logo-1.svg"
+            alt="tcs-logo-1"
+          />
+          </a>
+        </div>
+        <div class="navbar-collection">
+          <ul class="set-navbar">
+            <li class="nav-item">
+              <a>What we do</a>
+              <img src="/assets/images/down-arrow-icon.svg" alt="down-arrow" class="down-arrow-img" />
+            </li>
+            <li class="nav-item active">
+              <a>Who we are</a>
+              <img src="/assets/images/down-arrow-icon.svg" alt="down-arrow" class="down-arrow-img" />
+            </li>
+            <li class="nav-item">
+              <a>Insights</a>
+              <img src="/assets/images/down-arrow-icon.svg" alt="down-arrow" class="down-arrow-img" />
+            </li>
+            <li class="nav-item">
+              <a>Careers</a>
+              <img src="/assets/images/down-arrow-icon.svg" alt="down-arrow" class="down-arrow-img" />
+            </li>
+            <li class="nav-item">
+              <a>Newsroom</a>
+              <img src="/assets/images/down-arrow-icon.svg" alt="down-arrow" class="down-arrow-img"/>
+            </li>
+            <li class="nav-item">
+              <a>Investors</a>
+              <img src="/assets/images/down-arrow-icon.svg" alt="down-arrow" class="down-arrow-img"/>
+            </li>
+            <li class="nav-item">
+              <a>Worldwide</a>
+              <img src="/assets/images/down-arrow-icon.svg" alt="down-arrow" class="down-arrow-img"/>
+            </li>
+          </ul>
+
+          <div class="contact-btn">
+            <a
+              href="https://www.tcs.com/contact-us/whats-on-your-mind"
+              class="contact-nav"
+              >contact us</a
+            >
+          </div>
+        </div>
+        <button class="search-btn">
+          <img src="assets/images/search-icon.svg" alt="search-icon" class="search-img">
+        </button>
+        <a href="https://www.tata.com/">
+          <span class="tata-brand-logo-con">
           <img
-          class="tcs-logo-img"
-          src="https://www.tcs.com/content/dam/global-tcs/en/images/home/tcs-logo-1.svg"
-          alt="tcs-logo-1"
-        />
+            src="https://www.tcs.com/content/dam/global-tcs/en/images/home/tata-logo-1.svg"
+            alt="tata-brand-logo" class="tata-brand-img"
+          />
+        </span>
         </a>
+        <button class="menu-toggle" aria-label="Open menu">
+          <img src="assets/images/menu-icon.svg" alt="menu-icon" class="menu-icon-img">
+        </button>
       </div>
-      <div class="navbar-collection">
-        <ul class="set-navbar">
-          <li class="nav-item">
-            <a>What we do</a>
-            <img src="/assets/images/down arrow.svg" alt="down-arrow" />
-          </li>
-          <li class="nav-item active">
-            <a>Who we are</a>
-            <img src="/assets/images/down arrow.svg" alt="down-arrow" />
-          </li>
-          <li class="nav-item">
-            <a>Insights</a>
-            <img src="/assets/images/down arrow.svg" alt="down-arrow" />
-          </li>
-          <li class="nav-item">
-            <a>Careers</a>
-            <img src="/assets/images/down arrow.svg" alt="down-arrow" />
-          </li>
-          <li class="nav-item">
-            <a>Newsroom</a>
-            <img src="/assets/images/down arrow.svg" alt="down-arrow" />
-          </li>
-          <li class="nav-item">
-            <a>Investors</a>
-            <img src="/assets/images/down arrow.svg" alt="down-arrow" />
-          </li>
-          <li class="nav-item">
-            <a>Worldwide</a>
-            <img src="/assets/images/down arrow.svg" alt="down-arrow" />
+      <nav class="mobile-nav">
+        <ul class="mobile-nav-links">
+          <li><a href="#">What We do</a>
+          <img src="assets/images/down-arrow-icon.svg" alt="down-arrow"></li>
+          <li><a href="#">Who we are</a>
+          <img src="assets/images/down-arrow-icon.svg" alt="down-arrow"></li>
+          <li><a href="#">Insights</a>
+          <img src="assets/images/down-arrow-icon.svg" alt="down-arrow"></li>
+          <li><a href="#">Careers</a>
+          <img src="assets/images/down-arrow-icon.svg" alt="down-arrow"></li>
+          <li><a href="#">Newsroom</a>
+          <img src="assets/images/down-arrow-icon.svg" alt="down-arrow"></li>
+          <li><a href="#">Investors</a>
+          <img src="assets/images/down-arrow-icon.svg" alt="down-arrow"></li>
+          <li><a href="#">Worldwide</a>
+          <img src="assets/images/down-arrow-icon.svg" alt="down-arrow"></li>
+          <li><a href="#" class="contact-nav-txt">Contact us</a>
           </li>
         </ul>
-
-        <div class="contact-btn">
-          <a
-            href="https://www.tcs.com/contact-us/whats-on-your-mind"
-            class="contact-nav"
-            >contact us</a
-          >
-        </div>
-      </div>
-      <button class="search-btn"></button>
-      <a href="https://www.tata.com/">
-        <span class="tata-brand-logo-con">
-        <img
-          src="https://www.tcs.com/content/dam/global-tcs/en/images/home/tata-logo-1.svg"
-          alt="tata-brand-logo"
-        />
-      </span>
-      </a>
-      
+      </nav>
     </header>
+
     <section class="hero-section">
       <div class="hero-content">
         <p class="hero-sub-txt">Who we are</p>
@@ -110,6 +137,7 @@
     </section>
 
     <section class="our-people-section">
+      <div class="our-people-overlay"></div>
       <div class="our-people-section-content">
         <div>
           <p class="our-people-txt">our people</p>
@@ -128,7 +156,7 @@
         <div class="join-sec">
           <div>Join us</div>
           <div class="arrow-sec">
-              <img src="assets/images/right-arrow.svg" alt="right-arrow" />
+              <img src="assets/images/right-arrow.svg" alt="right-arrow" class="right-arrow-img" />
             </div>
           </a>
         </div>
@@ -138,8 +166,22 @@
     <section class="numbers-section">
       <div class="numbers-section-content">
         <p class="n-s-head-txt">Numbers you should know</p>
-        <div class="numbers-list">
-          <div class="number-card">
+        <div class="num-card-move mobile-view">
+          <div>
+            <p class="moving-num-txt">01 - 04</p>
+          </div>
+          <div class="nav-arrows">
+            <div class="arrow-btn">
+              <img src="assets/images/left-arrow.svg" alt="left-arrow" class="arrow-img">
+            </div>
+            <div class="arrow-btn">
+              <img src="assets/images/right-arrow.svg" alt="right-arrow" class="arrow-img">
+            </div>
+          </div>
+        </div>
+        <div class="card-wrapper">
+        <ul class="numbers-list">
+          <li class="number-card">
             <div class="num-div">
               <p class="number-txt">607K+</p>
             </div>
@@ -149,8 +191,8 @@
                 workforce globally distributed highly localized
               </p>
             </div>
-          </div>
-          <div class="number-card">
+          </li>
+          <li class="number-card">
             <div class="num-div">
               <p class="number-txt">152</p>
             </div>
@@ -160,8 +202,8 @@
                 nationalities represented from across the globe
               </p>
             </div>
-          </div>
-          <div class="number-card">
+          </li>
+          <li class="number-card">
             <div class="num-div">
               <p class="number-txt">35.2%</p>
             </div>
@@ -171,8 +213,8 @@
                 women workforce out of the total employee strength
               </p>
             </div>
-          </div>
-          <div class="number-card">
+          </li>
+          <li class="number-card">
             <div class="num-div">
               <p class="number-txt">5.2Mn</p>
             </div>
@@ -182,7 +224,8 @@
                 high demand competencies acquired. 5Mn hours of learning
               </p>
             </div>
-          </div>
+          </li>
+        </ul>
         </div>
       </div>
     </section>
@@ -193,7 +236,7 @@
           <img
             src="assets/images/investers-img.jpg"
             alt="investers-img"
-            class="invester-img"
+            class="investor-img"
           />
         </div>
         <div class="investor-content-right">
@@ -209,17 +252,19 @@
               enabling fair valuation of the stock.
             </p>
           </div>
-          <a href="https://www.tcs.com/investor-relations"></a>
-            <div class="read-more-sec">
-              <p>Read more</p>
-              <div class="arrow-sec investor-arrow-sec">
-                <img
-                  src="assets/images/right-arrow-white.svg"
-                  alt="right-arrow-icon"
-                />
+          <div>
+            <a href="https://www.tcs.com/investor-relations"></a>
+              <div class="read-more-sec">
+                <p>Read more</p>
+                <div class="arrow-sec investor-arrow-sec">
+                  <img
+                    src="assets/images/right-arrow-white.svg"
+                    alt="right-arrow-icon" class="right-arrow-img"
+                  />
+                </div>
               </div>
-            </div>
-          </a>
+            </a>
+          </div>
         </div>
       </div>
     </section>
@@ -240,7 +285,7 @@
               <p>What we do</p>
               <img
                 src="assets/images/right-arrow-white.svg"
-                alt="right-arrow"
+                alt="right-arrow" class="right-arrow-img"
               /></div
           ></a>
 
@@ -249,7 +294,7 @@
               <p>The TCS Way</p>
               <img
                 src="assets/images/right-arrow-white.svg"
-                alt="right-arrow"
+                alt="right-arrow" class="right-arrow-img"
               /></div
           ></a>
         </div>
@@ -258,10 +303,10 @@
 
     <footer>
       <div class="footer-content">
-        <div>
+        <div class="footer-logo">
           <a href="https://www.tcs.com/">
             <img
-            class="tcs-logo-img"
+            class="tcs-logo-img footer-tcs-logo"
             src="https://www.tcs.com/content/dam/global-tcs/en/images/home/tcs-logo-1.svg"
             alt="tcs-logo-1"
           />
@@ -269,7 +314,7 @@
           
         </div>
         <div class="footer-center-sec">
-          <p>©2025 TATA Consultancy Services Limited</p>
+          <p class="footer-copyright desktop-only">©2025 TATA Consultancy Services Limited</p>
           <div class="footer-nav">
             <a href="https://www.tcs.com/who-we-are/legal/tcs-privacy-notice"
               >Privacy Notice</a
@@ -290,12 +335,12 @@
               href="https://www.tcs.com/who-we-are/legal/tcs-privacy-notice/tcs-privacy-policy-usa#CPRA-2023"
               >California Notice at Collection</a
             >
+            <a href="javascript:void(0);">Customize cookies</a>
           </div>
-          <p>Customize cookies</p>
         </div>
         <div class="footer-social-media">
           <a href="https://www.facebook.com/TataConsultancyServices">
-            <img src="assets/images/facebook-icon.svg" alt="facebook-icon" />
+            <img src="assets/images/facebook-icon.svg" alt="facebook-icon" class="facebook-img" />
           </a>
           <a href="https://www.youtube.com/user/TCSGlobal">
             <img src="assets/images/youtube-icon.svg" alt="youtube-icon" />
@@ -310,6 +355,7 @@
             <img src="assets/images/linkedin-icon.svg" alt="linkedin-icon" />
           </a>
         </div>
+        <p class="footer-copyright mobile-only">©2025 TATA Consultancy Services Limited</p>
       </div>
     </footer>
 
