@@ -1,4 +1,4 @@
-# TCS Landing Page Clone (Responsive for Tablet and Desktop)
+# TCS Landing Page Clone (Responsive)
 
 This project is a clone of the official TCS website's landing page, designed using **HTML** and **CSS**. It includes a fixed background hero section, a fully responsive footer, and a structured content description section. The design currently supports **tablet** and **desktop** devices.
 

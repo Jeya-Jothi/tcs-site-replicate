@@ -58,6 +58,7 @@ leftArrow.addEventListener("click", () => {
   }
 });
 
+// number-section
 function updateArrowBtn() {
   if (currentCard <= 0) {
     leftArrow.classList.add("disabled");
@@ -72,3 +73,74 @@ function updateArrowBtn() {
   }
 }
 updateArrowBtn();
+
+// Template section
+
+const cardWrapper = document.querySelector(".g-t-k-card-wrapper");
+const templaterRightArrow = document.querySelectorAll(".template-arrow-btn")[1];
+const templateLeftArrow = document.querySelectorAll(".template-arrow-btn")[0];
+
+const templateCards = document.querySelectorAll(".template-card");
+const templateNumText = document.querySelector(".blue-num-txt");
+const totalTemplateCards = templateCards.length;
+
+const scrollAmount = 350;
+
+if (window.innerWidth <= 321) {
+  scrollAmount = cardWrapper.clientWidth; // scroll 1 full card
+}
+
+templaterRightArrow.addEventListener("click", () => {
+  cardWrapper.scrollBy({
+    left: scrollAmount,
+    behavior: "smooth",
+  });
+  setTimeout(() => {
+    updateTemplateArrowBtn();
+    updateTemplateNumText();
+  }, 300);
+});
+
+templateLeftArrow.addEventListener("click", () => {
+  cardWrapper.scrollBy({
+    left: -scrollAmount,
+    behavior: "smooth",
+  });
+  setTimeout(() => {
+    updateTemplateArrowBtn();
+    updateTemplateNumText();
+  }, 300);
+});
+
+function updateTemplateArrowBtn() {
+  const scrollLeft = cardWrapper.scrollLeft;
+  const scrollWidth = cardWrapper.scrollWidth;
+  const clientWidth = cardWrapper.clientWidth;
+
+  if (scrollLeft <= 0) {
+    templateLeftArrow.classList.add("disabled");
+  } else {
+    templateLeftArrow.classList.remove("disabled");
+  }
+
+  if (scrollLeft + clientWidth >= scrollWidth - 5) {
+    templaterRightArrow.classList.add("disabled");
+  } else {
+    templaterRightArrow.classList.remove("disabled");
+  }
+}
+
+function updateTemplateNumText() {
+  const scrollLeft = cardWrapper.scrollLeft;
+  const cardWidth = templateCards[0].offsetWidth;
+  const currentCardIndex = Math.round(scrollLeft / cardWidth);
+
+  const current = (currentCardIndex + 1).toString().padStart(2, "0");
+  const total = totalTemplateCards.toString().padStart(2, "0");
+
+  templateNumText.textContent = `${current}`;
+}
+
+// Initial load
+updateTemplateArrowBtn();
+updateTemplateNumText();
